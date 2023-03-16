@@ -12,7 +12,7 @@ export interface Album {
 export interface Song {
     albumId: number,
     title: string,
-    album: string,
+    albumName: string,
     band: string,
     length: string,
     songWriters: string,

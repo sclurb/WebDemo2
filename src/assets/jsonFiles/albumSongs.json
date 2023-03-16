@@ -2,7 +2,7 @@
     {
         "albumId":  1,
         "title":    "Running with the Devil",
-        "album":    "Van Halen I",
+        "albumName":    "Van Halen I",
         "band":     "Van Halen",
         "length":   "3:34",
         "songWriters":  "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
@@ -11,7 +11,7 @@
     {
         "albumId":  1,
         "title":    "Eruption",
-        "album":    "Van Halen I",
+        "albumName":    "Van Halen I",
         "band":     "Van Halen",
         "length":   "1:42",
         "songWriters":  "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
@@ -20,7 +20,7 @@
     {
         "albumId":  1,
         "title":    "You Really Got Me",
-        "album":    "Van Halen I",
+        "albumName":    "Van Halen I",
         "band":     "Van Halen",
         "length":   "2:35",
         "songWriters":  "Ray Davies (The Kinks)",
@@ -29,7 +29,7 @@
     {
         "albumId":  1,
         "title":    "Ain't Talkin' Bout Love",
-        "album":    "Van Halen I",
+        "albumName":    "Van Halen I",
         "band":     "Van Halen",
         "length":   "3:47",
         "songWriters":  "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
@@ -38,7 +38,7 @@
     {
         "albumId":  1,
         "title":    "I'm The One",
-        "album":    "Van Halen I",
+        "albumName":    "Van Halen I",
         "band":     "Van Halen",
         "length":   "3:44",
         "songWriters":  "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
@@ -47,7 +47,7 @@
     {
         "albumId":  1,
         "title":    "Jamie's Cryin'",
-        "album":    "Van Halen I",
+        "albumName":    "Van Halen I",
         "band":     "Van Halen",
         "length":   "3:29",
         "songWriters":  "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
@@ -56,7 +56,7 @@
     {
         "albumId":  1,
         "title":    "Atomic Punk",
-        "album":    "Van Halen I",
+        "albumName":    "Van Halen I",
         "band":     "Van Halen",
         "length":   "2:59",
         "songWriters":  "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
@@ -65,7 +65,7 @@
     {
         "albumId":  1,
         "title":    "Feel Your Love Tonight",
-        "album":    "Van Halen I",
+        "albumName":    "Van Halen I",
         "band":     "Van Halen",
         "length":   "3:40",
         "songWriters":  "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
@@ -74,7 +74,7 @@
     {
         "albumId":  1,
         "title":    "Little Dreamer",
-        "album":    "Van Halen I",
+        "albumName":    "Van Halen I",
         "band":     "Van Halen",
         "length":   "3:21",
         "songWriters":  "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
@@ -83,7 +83,7 @@
     {
         "albumId":  1,
         "title":    "Ice Cream Man",
-        "album":    "Van Halen I",
+        "albumName":    "Van Halen I",
         "band":     "Van Halen",
         "length":   "3:18",
         "songWriters":  "John Brim and Elmore James",
@@ -92,7 +92,7 @@
     {
         "albumId":  1,
         "title":    "On Fire",
-        "album":    "Van Halen I",
+        "albumName":    "Van Halen I",
         "band":     "Van Halen",
         "length":   "3:00",
         "songWriters":  "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",

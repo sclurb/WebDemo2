@@ -26,6 +26,7 @@ export class BandAlbumListComponent implements OnInit, OnDestroy {
   
 
   constructor(private albumService: AlbumService) { }
+  
   ngOnDestroy(): void {
     this.sub.unsubscribe();
   }
@@ -46,6 +47,8 @@ export class BandAlbumListComponent implements OnInit, OnDestroy {
     album.title.toLocaleLowerCase().includes(filterBy));
   }
   
-
+  albumSelected(): void{
+    console.log("selected Album")
+  }
 }
 

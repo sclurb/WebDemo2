@@ -20,7 +20,7 @@ export class AlbumService {
     );
   }
 
-  getSong(id: number): Observable<Song[]> {
+  getSongs(): Observable<Song[]> {
     return this.http.get<Song[]>(this.songUrl).pipe(
       tap(data => console.log('Songs: ', JSON.stringify(data))),
       catchError(this.handleError)
@@ -31,7 +31,7 @@ export class AlbumService {
     let errorMessage = '';
 
     if (err.error instanceof ErrorEvent) {
-      errorMessage = `Yuk, an error has happened: ${err.error.message}`;
+      errorMessage = `Attention!, an error has happened: ${err.error.message}`;
     }
     else {
       errorMessage = `Server returned code: ${err.status}, error messsage is: ${err.message}`;
