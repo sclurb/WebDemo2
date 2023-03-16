@@ -21,8 +21,10 @@ export class BandAlbumListComponent implements OnInit, OnDestroy {
   }
   filteredAlbums: Album[] = [];
   albums: Album[] = [];
+  album: Album | undefined;
   errorMessage: string = '';
   sub!: Subscription;
+  isVisible: boolean = false;
   
 
   constructor(private albumService: AlbumService) { }
@@ -47,8 +49,10 @@ export class BandAlbumListComponent implements OnInit, OnDestroy {
     album.title.toLocaleLowerCase().includes(filterBy));
   }
   
-  albumSelected(): void{
-    console.log("selected Album")
+  albumSelected(album: Album): void{
+    console.log("selected Album", album)
+    this.album = album;
+    this.isVisible = true;
   }
 }
 

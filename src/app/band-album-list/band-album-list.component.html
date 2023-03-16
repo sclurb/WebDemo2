@@ -23,7 +23,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let album of filteredAlbums" (click)="albumSelected()">
+                <tr *ngFor="let album of filteredAlbums" (click)="albumSelected(album)">
                     <td>{{album.title}}</td>
                     <td>{{album.releaseDate}}</td>
                     <td>{{album.recordedAt}}</td>
@@ -34,7 +34,7 @@
                 </tr>
             </tbody>
         </table>
-        <app-album-song-list></app-album-song-list>
+        <app-album-song-list [album]="album" [isVisible]="isVisible"></app-album-song-list>
     </div>
 
 </div>
