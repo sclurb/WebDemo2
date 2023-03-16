@@ -1,14 +1,17 @@
-<div >
-  <h1>Second Attempt at a Web Demo</h1>
+<div>
+  <div class="row">
 
+    <h1 class="col-md-6">Web Demo- Angular Using Web API Service</h1>
+
+  </div>
   <nav class='navbar navbar-expand navbar-dark bg-dark'>
-    <a class='navbar-brand' style="padding-left: 1%">{{title}}</a>
+    <a class='navbar-brand' style="padding-left: 1%" routerLink="/home">{{title}}</a>
     <ul class='nav nav-pills'>
       <li><a class='nav-link' routerLink="/band-album-list">Band</a></li>
       <li><a class='nav-link' routerLink="/album-song-list">Band Albums</a></li>
     </ul>
   </nav>
-  <div class='container'>
+  <div>
     <router-outlet></router-outlet>
   </div>
 </div>

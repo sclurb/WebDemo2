@@ -7,18 +7,21 @@ import { AlbumSongListComponent } from './album-song-list/album-song-list.compon
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BandAlbumListComponent,
-    AlbumSongListComponent
+    AlbumSongListComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       { path: 'band-album-list', component: BandAlbumListComponent },
-      { path: 'album-song-list', component: AlbumSongListComponent }
+      { path: 'album-song-list', component: AlbumSongListComponent },
+      { path: 'home', component: HomeComponent }
     ]),
     NgbModule,
     FormsModule,
