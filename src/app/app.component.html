@@ -1,12 +1,14 @@
-<h1>Second Attempt at a Web Demo</h1>
+<div >
+  <h1>Second Attempt at a Web Demo</h1>
 
-<nav class='navbar navbar-expand navbar-light bg-light'>
-  <a class='navbar-brand'>{{title}}</a>
-  <ul class='nav nav-pills'>
-  <li><a class='nav-link' routerLink="/band-album-list">Band</a></li>
-  <li><a class='nav-link' routerLink="/album-song-list">Band Albums</a></li>
-</ul>
-</nav>
-<div class='container'>
-  <router-outlet></router-outlet>
+  <nav class='navbar navbar-expand navbar-dark bg-dark'>
+    <a class='navbar-brand' style="padding-left: 1%">{{title}}</a>
+    <ul class='nav nav-pills'>
+      <li><a class='nav-link' routerLink="/band-album-list">Band</a></li>
+      <li><a class='nav-link' routerLink="/album-song-list">Band Albums</a></li>
+    </ul>
+  </nav>
+  <div class='container'>
+    <router-outlet></router-outlet>
+  </div>
 </div>

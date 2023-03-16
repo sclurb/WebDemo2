@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BandAlbumListComponent } from './band-album-list/band-album-list.component';
 import { AlbumSongListComponent } from './album-song-list/album-song-list.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
       { path: 'band-album-list', component: BandAlbumListComponent },
       { path: 'album-song-list', component: AlbumSongListComponent }
     ]),
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

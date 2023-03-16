@@ -1,0 +1,62 @@
+[
+    {
+        "albumId": 1,
+        "title": "Van Halen I",
+        "releaseDate": "February 10, 1978",
+        "recordedAt": "Sunset Sound Recorders, Hollywood, CA",
+        "recordedDate": "Sept - Oct 1977",
+        "length": "35.13 minutes",
+        "producer": "Ted Templeman",
+        "succeededBy": "Van Halen II"
+    },
+    {
+        "albumId": 2,
+        "title": "Van Halen II",
+        "releaseDate": "March 23, 1979",
+        "recordedAt": "Sunset Sound Recorders, Hollywood, CA",
+        "recordedDate": "Dec 1978 - Jan 1979",
+        "length": "32:00 minutes",
+        "producer": "Ted Templeman",
+        "succeededBy": "Woman and Children First"
+    },
+    {
+        "albumId": 3,
+        "title": "Woman and Children First",
+        "releaseDate": "March 26, 1980",
+        "recordedAt": "Sunset Sound Recorders, Hollywood, CA",
+        "recordedDate": "Sept - Oct 1977",
+        "length": "32:00 minutes",
+        "producer": "Ted Templeman",
+        "succeededBy": "Fair Warning"
+    },
+    {
+        "albumId": 4,
+        "title": "Fair Warning",
+        "releaseDate": "April 29, 1981",
+        "recordedAt": "Sunset Sound Recorders, Hollywood, CA",
+        "recordedDate": "March - April 1981",
+        "length": "30:58 minutes",
+        "producer": "Ted Templeman",
+        "succeededBy": "Diver Down"
+    },
+    {
+        "albumId": 5,
+        "title": "Diver Down",
+        "releaseDate": "April 14, 1982",
+        "recordedAt": "Sunset Sound Recorders, Hollywood, CA",
+        "recordedDate": "Jan - March 1982",
+        "length": "31:04 minutes",
+        "producer": "Ted Templeman",
+        "succeededBy": "1984"
+    },
+    {
+        "albumId": 6,
+        "title": "1984",
+        "releaseDate": "Jan 9, 1984",
+        "recordedAt": "5150 Studios, Studio City, CA",
+        "recordedDate": "June - Oct 1983",
+        "length": "33:22 minutes",
+        "producer": "Ted Templeman",
+        "succeededBy": "Diver Down"
+    }
+]
