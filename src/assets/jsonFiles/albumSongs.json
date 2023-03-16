@@ -1,101 +1,533 @@
 [
     {
-        "albumId":  1,
-        "title":    "Running with the Devil",
-        "albumName":    "Van Halen I",
-        "band":     "Van Halen",
-        "length":   "3:34",
-        "songWriters":  "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
-        "youTubeUrl":   "https://www.youtube.com/watch?v=i5txwFv-zYM"
+        "albumId": 1,
+        "title": "Running with the Devil",
+        "albumName": "Van Halen I",
+        "band": "Van Halen",
+        "length": "3:34",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=i5txwFv-zYM"
     },
     {
-        "albumId":  1,
-        "title":    "Eruption",
-        "albumName":    "Van Halen I",
-        "band":     "Van Halen",
-        "length":   "1:42",
-        "songWriters":  "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
-        "youTubeUrl":   "https://www.youtube.com/watch?v=sI7XiJgt0vY"
+        "albumId": 1,
+        "title": "Eruption",
+        "albumName": "Van Halen I",
+        "band": "Van Halen",
+        "length": "1:42",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=sI7XiJgt0vY"
     },
     {
-        "albumId":  1,
-        "title":    "You Really Got Me",
-        "albumName":    "Van Halen I",
-        "band":     "Van Halen",
-        "length":   "2:35",
-        "songWriters":  "Ray Davies (The Kinks)",
-        "youTubeUrl":   "https://www.youtube.com/watch?v=-Oh6hNFZ2KA"
+        "albumId": 1,
+        "title": "You Really Got Me",
+        "albumName": "Van Halen I",
+        "band": "Van Halen",
+        "length": "2:35",
+        "songWriters": "Ray Davies (The Kinks)",
+        "youTubeUrl": "https://www.youtube.com/watch?v=-Oh6hNFZ2KA"
     },
     {
-        "albumId":  1,
-        "title":    "Ain't Talkin' Bout Love",
-        "albumName":    "Van Halen I",
-        "band":     "Van Halen",
-        "length":   "3:47",
-        "songWriters":  "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
-        "youTubeUrl":   "https://www.youtube.com/watch?v=sI7XiJgt0vY"
+        "albumId": 1,
+        "title": "Ain't Talkin' Bout Love",
+        "albumName": "Van Halen I",
+        "band": "Van Halen",
+        "length": "3:47",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=sI7XiJgt0vY"
     },
     {
-        "albumId":  1,
-        "title":    "I'm The One",
-        "albumName":    "Van Halen I",
-        "band":     "Van Halen",
-        "length":   "3:44",
-        "songWriters":  "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
-        "youTubeUrl":   "https://www.youtube.com/watch?v=EllEztdbBhg"
+        "albumId": 1,
+        "title": "I'm The One",
+        "albumName": "Van Halen I",
+        "band": "Van Halen",
+        "length": "3:44",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=EllEztdbBhg"
     },
     {
-        "albumId":  1,
-        "title":    "Jamie's Cryin'",
-        "albumName":    "Van Halen I",
-        "band":     "Van Halen",
-        "length":   "3:29",
-        "songWriters":  "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
-        "youTubeUrl":   "https://www.youtube.com/watch?v=ikHwc75L8tM"
+        "albumId": 1,
+        "title": "Jamie's Cryin'",
+        "albumName": "Van Halen I",
+        "band": "Van Halen",
+        "length": "3:29",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=ikHwc75L8tM"
     },
     {
-        "albumId":  1,
-        "title":    "Atomic Punk",
-        "albumName":    "Van Halen I",
-        "band":     "Van Halen",
-        "length":   "2:59",
-        "songWriters":  "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
-        "youTubeUrl":   "https://www.youtube.com/watch?v=_2JTCd_lLOg"
+        "albumId": 1,
+        "title": "Atomic Punk",
+        "albumName": "Van Halen I",
+        "band": "Van Halen",
+        "length": "2:59",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=_2JTCd_lLOg"
     },
     {
-        "albumId":  1,
-        "title":    "Feel Your Love Tonight",
-        "albumName":    "Van Halen I",
-        "band":     "Van Halen",
-        "length":   "3:40",
-        "songWriters":  "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
-        "youTubeUrl":   "https://www.youtube.com/watch?v=S4-GR6FMQMM"
+        "albumId": 1,
+        "title": "Feel Your Love Tonight",
+        "albumName": "Van Halen I",
+        "band": "Van Halen",
+        "length": "3:40",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=S4-GR6FMQMM"
     },
     {
-        "albumId":  1,
-        "title":    "Little Dreamer",
-        "albumName":    "Van Halen I",
-        "band":     "Van Halen",
-        "length":   "3:21",
-        "songWriters":  "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
-        "youTubeUrl":   "https://www.youtube.com/watch?v=_4wGJBBnfqQ"
+        "albumId": 1,
+        "title": "Little Dreamer",
+        "albumName": "Van Halen I",
+        "band": "Van Halen",
+        "length": "3:21",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=_4wGJBBnfqQ"
     },
     {
-        "albumId":  1,
-        "title":    "Ice Cream Man",
-        "albumName":    "Van Halen I",
-        "band":     "Van Halen",
-        "length":   "3:18",
-        "songWriters":  "John Brim and Elmore James",
-        "youTubeUrl":   "https://www.youtube.com/watch?v=sL9ZwmkooBA"
+        "albumId": 1,
+        "title": "Ice Cream Man",
+        "albumName": "Van Halen I",
+        "band": "Van Halen",
+        "length": "3:18",
+        "songWriters": "John Brim and Elmore James",
+        "youTubeUrl": "https://www.youtube.com/watch?v=sL9ZwmkooBA"
     },
     {
-        "albumId":  1,
-        "title":    "On Fire",
-        "albumName":    "Van Halen I",
-        "band":     "Van Halen",
-        "length":   "3:00",
-        "songWriters":  "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
-        "youTubeUrl":   "https://www.youtube.com/watch?v=nJJoGtDKQeo"
+        "albumId": 1,
+        "title": "On Fire",
+        "albumName": "Van Halen I",
+        "band": "Van Halen",
+        "length": "3:00",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=nJJoGtDKQeo"
+    },
+    {
+        "albumId": 2,
+        "title": "You're No Good",
+        "albumName": "Van Halen II",
+        "band": "Van Halen",
+        "length": "3:15",
+        "songWriters": "Betty Everett",
+        "youTubeUrl": "https://www.youtube.com/watch?v=nGTfobvlscc"
+    },
+    {
+        "albumId": 2,
+        "title": "Dance the Night Away",
+        "albumName": "Van Halen II",
+        "band": "Van Halen",
+        "length": "3:08",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=E-rTKd-Alk8"
+    },
+    {
+        "albumId": 2,
+        "title": "Somebody Get Me a Doctor",
+        "albumName": "Van Halen II",
+        "band": "Van Halen",
+        "length": "2:50",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=NkJOZOOXJWk"
+    },
+    {
+        "albumId": 2,
+        "title": "Bottoms Up!",
+        "albumName": "Van Halen II",
+        "band": "Van Halen",
+        "length": "3:04",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=Z8fYlqqg-pQ"
+    },
+    {
+        "albumId": 2,
+        "title": "Outta Love Again",
+        "albumName": "Van Halen II",
+        "band": "Van Halen",
+        "length": "2:52",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=Jgn9bEnZGdY"
+    },
+    {
+        "albumId": 2,
+        "title": "Light Up the Sky",
+        "albumName": "Van Halen II",
+        "band": "Van Halen",
+        "length": "3:09",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=4uiqgwUs1l4"
+    },
+    {
+        "albumId": 2,
+        "title": "Spanish Fly",
+        "albumName": "Van Halen II",
+        "band": "Van Halen",
+        "length": "1:01",
+        "songWriters": "Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=cM7GZXeH6-g"
+    },
+    {
+        "albumId": 2,
+        "title": "D.O.A.",
+        "albumName": "Van Halen II",
+        "band": "Van Halen",
+        "length": "4:07",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=-0XdzSMzwgw"
+    },
+    {
+        "albumId": 2,
+        "title": "Woman in Love",
+        "albumName": "Van Halen II",
+        "band": "Van Halen",
+        "length": "4:05",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=iofxm92XcMI"
+    },
+    {
+        "albumId": 2,
+        "title": "Beautiful Girls",
+        "albumName": "Van Halen II",
+        "band": "Van Halen",
+        "length": "3:54",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=bJ9h2m06sFQ"
+    },
+    {
+        "albumId": 3,
+        "title": "And the Cradle Will Rock",
+        "albumName": "Women and Children First",
+        "band": "Van Halen",
+        "length": "3:33",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=11mBDT5mpdw"
+    },
+    {
+        "albumId": 3,
+        "title": "Everybody Wants Some",
+        "albumName": "Women and Children First",
+        "band": "Van Halen",
+        "length": "5:06",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=4EI8JN-fSLo"
+    },
+    {
+        "albumId": 3,
+        "title": "Fools",
+        "albumName": "Women and Children First",
+        "band": "Van Halen",
+        "length": "5:56",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=j-g4flwXpE8"
+    },
+    {
+        "albumId": 3,
+        "title": "Romeo Delight",
+        "albumName": "Women and Children First",
+        "band": "Van Halen",
+        "length": "4:19",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=FGbb8-j1Suo"
+    },
+    {
+        "albumId": 3,
+        "title": "Tora! Tora!",
+        "albumName": "Women and Children First",
+        "band": "Van Halen",
+        "length": ":57",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=iiTQNiiSDCU"
+    },
+    {
+        "albumId": 3,
+        "title": "Loss of Control",
+        "albumName": "Women and Children First",
+        "band": "Van Halen",
+        "length": "2:38",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=Hygxc25qhic"
+    },
+    {
+        "albumId": 3,
+        "title": "Take Your Whiskey Home",
+        "albumName": "Women and Children First",
+        "band": "Van Halen",
+        "length": "3:09",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=SzXB4rIVtHw"
+    },
+    {
+        "albumId": 3,
+        "title": "Could This Be Magic?",
+        "albumName": "Women and Children First",
+        "band": "Van Halen",
+        "length": "3:10",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=d4MC5L7EH9s"
+    },
+    {
+        "albumId": 3,
+        "title": "Growth",
+        "albumName": "Women and Children First",
+        "band": "Van Halen",
+        "length": "18",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=nQhIGzLg7Xw"
+    },
+    {
+        "albumId": 4,
+        "title": "Mean Street",
+        "albumName": "Fair Warning",
+        "band": "Van Halen",
+        "length": "5:00",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=m4akn6e59TQ"
+    },
+    {
+        "albumId": 4,
+        "title": "Dirty Movies",
+        "albumName": "Fair Warning",
+        "band": "Van Halen",
+        "length": "4:07",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=YVG5ZWOBEF0"
+    },
+    {
+        "albumId": 4,
+        "title": "Sinner's Swing",
+        "albumName": "Fair Warning",
+        "band": "Van Halen",
+        "length": "3:08",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=JnZE7n2Gl3Q"
+    },
+    {
+        "albumId": 4,
+        "title": "Hear About It Later",
+        "albumName": "Fair Warning",
+        "band": "Van Halen",
+        "length": "4:32",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=x6Y1CTqu3k0"
+    },
+    {
+        "albumId": 4,
+        "title": "Unchained",
+        "albumName": "Fair Warning",
+        "band": "Van Halen",
+        "length": "3:29",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=xx86CxKYtg0"
+    },
+    {
+        "albumId": 4,
+        "title": "Push Comes to Shove",
+        "albumName": "Fair Warning",
+        "band": "Van Halen",
+        "length": "3:48",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=2qRP6hNefYg"
+    },
+    {
+        "albumId": 4,
+        "title": "So This is Love?",
+        "albumName": "Fair Warning",
+        "band": "Van Halen",
+        "length": "3:05",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=rLUn42qwKHc"
+    },
+    {
+        "albumId": 4,
+        "title": "Sunday Afternoon in the Park",
+        "albumName": "Fair Warning",
+        "band": "Van Halen",
+        "length": "1:58",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=lgMp9ADcYls"
+    },
+    {
+        "albumId": 4,
+        "title": "One Foot Out the Door",
+        "albumName": "Fair Warning",
+        "band": "Van Halen",
+        "length": "2:00",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=euXtj2a8oiM"
+    },
+    {
+        "albumId": 5,
+        "title": "Where Have All the Good Times Gone!",
+        "albumName": "Diver Down",
+        "band": "Van Halen",
+        "length": "3:04",
+        "songWriters": "Ray Davies (The Kinks)",
+        "youTubeUrl": "https://www.youtube.com/watch?v=0akdECguSVs"
+    },
+    {
+        "albumId": 5,
+        "title": "Hang 'Em High",
+        "albumName": "Diver Down",
+        "band": "Van Halen",
+        "length": "3:28",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=YjOKti90xQA"
+    },
+    {
+        "albumId": 5,
+        "title": "Cathedral",
+        "albumName": "Diver Down",
+        "band": "Van Halen",
+        "length": "1:23",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=Nz7FDHlu52U"
+    },
+    {
+        "albumId": 5,
+        "title": "Secrets",
+        "albumName": "Diver Down",
+        "band": "Van Halen",
+        "length": "3:25",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=2amyCWvGZVc"
+    },
+    {
+        "albumId": 5,
+        "title": "Intruder",
+        "albumName": "Diver Down",
+        "band": "Van Halen",
+        "length": "1:39",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=0RZf-bV3aRE"
+    },
+    {
+        "albumId": 5,
+        "title": "(Oh) Pretty Woman",
+        "albumName": "Diver Down",
+        "band": "Van Halen",
+        "length": "2:52",
+        "songWriters": "Roy Orbison",
+        "youTubeUrl": "https://www.youtube.com/watch?v=dLaFiKfpcVQ"
+    },
+    {
+        "albumId": 5,
+        "title": "Dancing in the Street",
+        "albumName": "Diver Down",
+        "band": "Van Halen",
+        "length": "3:45",
+        "songWriters": "Marvin Gaye, William 'Mickey' Stevenson and Ivy Jo Hunter.",
+        "youTubeUrl": "https://www.youtube.com/watch?v=QIfotf13gzE"
+    },
+    {
+        "albumId": 5,
+        "title": "Little Guitars",
+        "albumName": "Diver Down",
+        "band": "Van Halen",
+        "length": "3:47",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=ZtBOtBrfJM4"
+    },
+    {
+        "albumId": 5,
+        "title": "Big Bad Bill (Is Sweet William Now)",
+        "albumName": "Diver Down",
+        "band": "Van Halen",
+        "length": "2:44",
+        "songWriters": "Jack Yellen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=kkxqcWhym9U"
+    },
+    {
+        "albumId": 5,
+        "title": "The Full Bug",
+        "albumName": "Diver Down",
+        "band": "Van Halen",
+        "length": "3:19",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=jd6mSLI0-wY"
+    },
+    {
+        "albumId": 5,
+        "title": "Happy Trails",
+        "albumName": "Diver Down",
+        "band": "Van Halen",
+        "length": "3:19",
+        "songWriters": "Dale Evans",
+        "youTubeUrl": "https://www.youtube.com/watch?v=jd6mSLI0-wY"
+    },
+    {
+        "albumId": 6,
+        "title": "1984 (Instrumental)",
+        "albumName": "1984",
+        "band": "Van Halen",
+        "length": "1:07",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=UM68ZL42hp0"
+    },
+    {
+        "albumId": 6,
+        "title": "Jump",
+        "albumName": "1984",
+        "band": "Van Halen",
+        "length": "4:01",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=SwYN7mTi6HM"
+    },
+    {
+        "albumId": 6,
+        "title": "Panama",
+        "albumName": "1984",
+        "band": "Van Halen",
+        "length": "3:42",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=fuKDBPw8wQA"
+    },
+    {
+        "albumId": 6,
+        "title": "Top Jimmy",
+        "albumName": "1984",
+        "band": "Van Halen",
+        "length": "2:59",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=ssi9du5lUpA"
+    },
+    {
+        "albumId": 6,
+        "title": "Drop Dead Legs",
+        "albumName": "1984",
+        "band": "Van Halen",
+        "length": "4:14",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=-EwJ9PkcZk4"
+    },
+    {
+        "albumId": 6,
+        "title": "Hot for Teacher",
+        "albumName": "1984",
+        "band": "Van Halen",
+        "length": "4:42",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=7grUgixqH8I"
+    },
+    {
+        "albumId": 6,
+        "title": "I'll Wait",
+        "albumName": "1984",
+        "band": "Van Halen",
+        "length": "4:40",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=_CIE041T954"
+    },
+    {
+        "albumId": 6,
+        "title": "Girl Gone Bad",
+        "albumName": "1984",
+        "band": "Van Halen",
+        "length": "4:35",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=FcJA2-Vq4xY"
+    },
+    {
+        "albumId": 6,
+        "title": "House of Pain",
+        "albumName": "1984",
+        "band": "Van Halen",
+        "length": "3:19",
+        "songWriters": "Michael Anthony, David Lee Roth, Alex Van Halen, Eddie Van Halen",
+        "youTubeUrl": "https://www.youtube.com/watch?v=mg5zzivyOcA"
     }
 ]
