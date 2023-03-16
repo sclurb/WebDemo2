@@ -23,13 +23,15 @@
                 </tr>
             </thead>
             <tbody>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <tr *ngFor="let album of filteredAlbums">
+                    <td>{{album.title}}</td>
+                    <td>{{album.releaseDate}}</td>
+                    <td>{{album.recordedAt}}</td>
+                    <td>{{album.recordedDate}}</td>
+                    <td>{{album.length}}</td>
+                    <td>{{album.producer}}</td>
+                    <td>{{album.succeededBy}}</td>
+                </tr>
             </tbody>
         </table>
     </div>

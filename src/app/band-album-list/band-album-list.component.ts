@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Album } from './album';
-import { FormsModule } from '@angular/forms';
 import { AlbumService } from './album.service';
+import { Subscription } from 'rxjs';
 
 
 @Component({
@@ -9,7 +9,7 @@ import { AlbumService } from './album.service';
   templateUrl: './band-album-list.component.html',
   styleUrls: ['./band-album-list.component.css']
 })
-export class BandAlbumListComponent implements OnInit {
+export class BandAlbumListComponent implements OnInit, OnDestroy {
 
   private _listFilter: string = '';
   get listFilter(): string {
@@ -21,12 +21,23 @@ export class BandAlbumListComponent implements OnInit {
   }
   filteredAlbums: Album[] = [];
   albums: Album[] = [];
+  errorMessage: string = '';
+  sub!: Subscription;
   
 
-  constructor() { }
+  constructor(private albumService: AlbumService) { }
+  ngOnDestroy(): void {
+    this.sub.unsubscribe();
+  }
 
   ngOnInit(): void {
-
+    this.sub = this.albumService.getAlbums().subscribe({
+      next: albums => {
+        this.albums = albums;
+        this.filteredAlbums = this.albums;
+      },
+      error: err => this.errorMessage = err
+    });
   }
 
   performFilter(filterBy: string): Album[] {

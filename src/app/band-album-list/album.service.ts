@@ -8,7 +8,7 @@ import { HttpClient, HttpErrorResponse } from "@angular/common/http";
 })
 export class AlbumService {
 
-  private albumUrl = 'api/band/album-list/album.json';
+  private albumUrl = 'assets/jsonFiles/albums.json';
 
   constructor(private http: HttpClient) { }
 
@@ -20,13 +20,13 @@ export class AlbumService {
   }
 
   handleError(err: HttpErrorResponse) {
-     
+
     let errorMessage = '';
 
-    if(err.error instanceof ErrorEvent) {
+    if (err.error instanceof ErrorEvent) {
       errorMessage = `Yuk, an error has happened: ${err.error.message}`;
     }
-    else{
+    else {
       errorMessage = `Server returned code: ${err.status}, error messsage is: ${err.message}`;
     }
     console.error(errorMessage);
