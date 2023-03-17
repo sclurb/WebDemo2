@@ -16,12 +16,12 @@
             </thead>
             <tbody>
                 <tr *ngFor="let song of selectedSongs">
-                    <td>{{song.title}}</td>
-                    <td>{{song.albumName}}</td>
-                    <td>{{song.band}}</td>
-                    <td>{{song.length}}</td>
-                    <td>{{song.songWriters}}</td>
-                    <td>
+                    <td style="width: 20%">{{song.title}}</td>
+                    <td style="width: 10%">{{song.albumName}}</td>
+                    <td style="width: 10%">{{song.band}}</td>
+                    <td style="width: 5%">{{song.length}}</td>
+                    <td style="width: 35%">{{song.songWriters}}</td>
+                    <td style="width: 20%">
                         <a href="{{song.youTubeUrl}}" target="_blank">{{song.title}}</a>
                     </td>
                 </tr>
