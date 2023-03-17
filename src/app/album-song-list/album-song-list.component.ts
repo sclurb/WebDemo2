@@ -12,7 +12,6 @@ export class AlbumSongListComponent implements OnInit, OnDestroy {
 
   @Input() album: Album | undefined;
   @Input() isVisible: boolean = false;
-  //@Input() albumId: number | undefined;
 
   songs: Song[] = [];
   selectedSongs: Song[] = [];
@@ -36,16 +35,18 @@ export class AlbumSongListComponent implements OnInit, OnDestroy {
     this.sub = this.albumService.getSongs().subscribe({
       next: songs => {
         this.songs = songs;
-        this.selectedSongs = this.songs.filter(x => x.albumId === 1);
       },
       error: err => this.errorMessage = err
     });
-    this.selectedSongs = this.songs.filter(x => x.albumId === 1);
-    console.log("albumId", this.albumId)
   }
 
   ngOnDestroy(): void {
     this.sub.unsubscribe();
+  }
+
+  changeSelectedSongs(albumId: number): void {
+    console.log("Hey Dude")
+    this.selectedSongs = this.songs.filter(x => x.albumId === albumId);
   }
 
 }

@@ -34,7 +34,7 @@
                 </tr>
             </tbody>
         </table>
-        <app-album-song-list [album]="album" [isVisible]="isVisible"></app-album-song-list>
+        <app-album-song-list [album]="album" [isVisible]="isVisible" (changeSelectedSongs)="albumSelected(album!)"></app-album-song-list>
     </div>
 
 </div>

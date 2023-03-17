@@ -7,3 +7,13 @@ body, html {
     color: #aaaaaa;
     }
 
+.border {
+    border-style: solid;
+    border-color: aqua;
+}
+
+.text {
+    color:aqua;
+    text-align: center;
+
+}

@@ -49,10 +49,9 @@ export class BandAlbumListComponent implements OnInit, OnDestroy {
     album.title.toLocaleLowerCase().includes(filterBy));
   }
   
-  albumSelected(album: Album): void{
-    console.log("selected Album", album)
+  albumSelected(album: Album): void {
+   console.log("selected Album", album)
     this.album = album;
     this.isVisible = true;
   }
 }
-

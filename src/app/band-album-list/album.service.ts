@@ -15,14 +15,14 @@ export class AlbumService {
 
   getAlbums(): Observable<Album[]> {
     return this.http.get<Album[]>(this.albumUrl).pipe(
-      tap(data => console.log('All: ', JSON.stringify(data))),
+      //tap(data => console.log('All: ', JSON.stringify(data))),
       catchError(this.handleError)
     );
   }
 
   getSongs(): Observable<Song[]> {
     return this.http.get<Song[]>(this.songUrl).pipe(
-      tap(data => console.log('Songs: ', JSON.stringify(data))),
+      //tap(data => console.log('Songs: ', JSON.stringify(data))),
       catchError(this.handleError)
     );
   }
