@@ -1,4 +1,4 @@
-import { Component, Input, OnDestroy, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Album, Song } from '../band-album-list/album';
 import { AlbumService } from '../band-album-list/album.service';
@@ -8,7 +8,7 @@ import { AlbumService } from '../band-album-list/album.service';
   templateUrl: './album-song-list.component.html',
   styleUrls: ['./album-song-list.component.css']
 })
-export class AlbumSongListComponent implements OnInit, OnDestroy {
+export class AlbumSongListComponent implements OnInit, OnDestroy, OnChanges {
 
   @Input() album: Album | undefined;
   @Input() isVisible: boolean = false;
@@ -18,18 +18,9 @@ export class AlbumSongListComponent implements OnInit, OnDestroy {
   errorMessage: string = '';
   sub!: Subscription;
 
-  private _albumId: number = 1;
-  get albumId(): number {
-    return this._albumId;
-  }
-  set albumId(value: number){
-    this._albumId = value;
-  }
-
-
   constructor(private albumService: AlbumService) {
 
-   }
+  }
 
   ngOnInit(): void {
     this.sub = this.albumService.getSongs().subscribe({
@@ -44,9 +35,8 @@ export class AlbumSongListComponent implements OnInit, OnDestroy {
     this.sub.unsubscribe();
   }
 
-  changeSelectedSongs(albumId: number): void {
-    console.log("Hey Dude")
-    this.selectedSongs = this.songs.filter(x => x.albumId === albumId);
+  ngOnChanges() {
+    this.selectedSongs = this.songs.filter(x => x.albumId === this.album?.albumId);
   }
 
 }

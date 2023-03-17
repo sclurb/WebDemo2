@@ -50,7 +50,6 @@ export class BandAlbumListComponent implements OnInit, OnDestroy {
   }
   
   albumSelected(album: Album): void {
-   console.log("selected Album", album)
     this.album = album;
     this.isVisible = true;
   }
