@@ -8,19 +8,21 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
+import { AngularRoutingComponent } from './angular-routing/angular-routing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BandAlbumListComponent,
     AlbumSongListComponent,
-    HomeComponent
+    HomeComponent,
+    AngularRoutingComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       { path: 'band-album-list', component: BandAlbumListComponent },
-      { path: 'album-song-list', component: AlbumSongListComponent },
+      { path: 'angular-routing', component: AngularRoutingComponent },
       { path: 'home', component: HomeComponent }
     ]),
     NgbModule,

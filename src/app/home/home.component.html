@@ -1,71 +1,51 @@
-<h3 class="textCenter">Angular Routing and Using API Services</h3>
-
+<h3 class="textCenter">Robert Donovan's Web Page.</h3>
 
 <div class="row">
     <div class="col-md-6 border ">
-        <h4 class="textCenter">Angular Routing</h4>
-        <p>We need to understand a little about how angular displays page's before we understand how routing works.</p>
-        <p>Angular is really a 'single page application'. That means the application is showing
-            one page but the different views take turns appearing on Index.html page.</p>
+        <h4 class="textCenter">Wecome to My Office</h4>
+        <p>This is where I get my work done. </p>
         <figure class="text-center">
-            <img class=" img-fluid" src="./assets/img/index.png" />
-            <figcaption class="text-center">'Figure-1' This is the Index.html file for the application.</figcaption>
-        </figure>
-        <p>In this sample application, the Index.html file is a standard html file with two main tags:
-            'head' and 'body'. It uses standard boiler plate html, but within the body tag, there is an Angular
-            custom html tag: 'app-root'. This custom tag is also the selector of the component we would like to appear
-            in the body of our Index.html page. in this sample application, I have chosen to show the app.comonent in
-            the Index.html body tag.
-        </p>
-        <figure class="text-center">
-            <img class=" img-fluid" src="./assets/img/appComponent-ts.png" />
-            <figcaption class="text-center">'Figure-2' This is the app.compnent.ts file for this application.
+            <img class=" img-fluid" src="./assets/img/kitty.png" />
+            <figcaption class="text-center">Here is Pistol the cat or I sometimes call him the 'little monster'. He
+                likes to hang out when I am working.
             </figcaption>
         </figure>
-        <p>As you can see in app.comonent.ts file, the 'selector' is the same as the custom custom html tag in the
-            Index.html file 'app-root'. And that is how we see the app.component.html file in our application.</p>
-        <p>In the image below, we can see the app.comonet.html file. You will notice the standard type of nav bar.
-            But in the div tag just below the navigation section, there is the router-outlet. In other words,
-            what ever the router selects, will appear in this section.</p>
+        <p>Chuckles... Here's how it can feel when working like this episode of 'I Love Lucy'</p>
         <figure class="text-center">
-            <img class=" img-fluid" src="./assets/img/appComponent-html.PNG" />
-            <figcaption class="text-center">'Figure-3' This is the app.compnent.html file for this application.
+            <img class=" img-fluid" src="./assets/img/work-busy.gif" width="75%" style="padding: 7%" />
+            <figcaption class="text-center">In case you wanted to know, I rememeber watching this as a kid.
+                Lucy and Ethel go get a job in a Candy factory where they are to wrap chocolate and put them into boxes.
+                When the factory increases the work load, they try and deal with it by eating some and stuffing some in
+                their bras.
             </figcaption>
         </figure>
-        <p>Now we know how the output of th router appears on the page, let's take a look at how the routing actually
-            works.</p>
-        <h4>Routing</h4>
-        <p>Before I jump too far into Routing, I should mention app.modules. As far as I can tell, an angular app can
-            have many
-            different modules and many come standard with angular. But in this demo application, I have chosen to be
-            simple and
-            use only one module 'app.module.ts' which lives in the src/app folder.
-        </p>
-        <figure class="text-center">
-            <img class=" img-fluid" src="./assets/img/top-appModule.PNG" />
-            <figcaption class="text-center">'Figure-4' This is the imports section of the app.module.ts file for this
-                application.</figcaption>
-        </figure>
-        <p>If you will notice, there is an import statement for RouterModule. This is a necessity.
-            Now we have to make this import available for all angular components in this application that will need to
-            use routing.
-            This is accomplished by adding RouterModule to the 'imports' portion after the @NGModule decorator.</p>
-        <figure class="text-center">
-            <img class=" img-fluid" src="./assets/img/imports-appmodule.PNG" />
-            <figcaption class="text-center">'Figure-5' This is where the imports become available to any compnents that
-                need to use routing
-                for this application.</figcaption>
-        </figure>
-        <p>Within the 'forRoot()' method of RouterModule we define the the path of the comonent to be router as the
-            first parameter.
-            The second parameter is the name of the component to be routed.</p>
-        <p>Finally we use a directive called 'routerLink' in the anchor tag as shown in 'Figure-3' above. And 'Presto'
-            you got angular routing.</p>
-        <p>In individual components, it is possible to import 'Router' and use the navigate() method to router
-            programmatically as well.</p>
     </div>
-    <div class="col-md-6 border text">
-        <h4 class="textCenter">Using Web API's with Angular</h4>
+    <div class="col-md-6 border ">
+        <h4 class="textCenter">And this is for Fun</h4>
+        <p>After a lengthy and frustrating boat repair. </p>
+        <div class="row">
+            <div class=col-md-6>
+                <figure class="text-center">
+                    <img class=" img-fluid" src="./assets/img/finally.jpg" />
+                    <figcaption class="text-center">Back out on the water.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class=col-md-6>
+                <figure class="text-center">
+                    <img class=" img-fluid" src="./assets/img/intercoastal.png" />
+                    <figcaption class="text-center">Anchored at -Todd's Island- (South part of Anclote Key).
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <figure class="text-center">
+            <img class=" img-fluid" src="./assets/img/YoungBob.jpg" width="75%" style="padding: 7%" />
+            <figcaption class="text-center">A friend sent this to me.  This photo must have been from the early 2000's.
+                It looks like we are heading back to the dock from Clearwater Beach.   
+                It is in the evening I believe because the anchor light is on.   But I do not see a single gray hair on my head!
+            </figcaption>
+        </figure>
     </div>
 
 </div>
