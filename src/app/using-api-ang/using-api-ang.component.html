@@ -1,1 +1,80 @@
-<p>using-api-ang works!</p>
+<h3 class="textCenter">Using Web API's in Angular</h3>
+
+<div class="row">
+    <div class="col-md-12 textCenter container">
+        <h4>Adding HttpClientModule</h4>
+        <p>First in the App.Module.ts file, we'll need to add the import statement for HttpModule</p>
+        <figure class="text-center">
+            <img class=" img-fluid" src="./assets/img/AppModule_Imports.PNG" width="50%" />
+            <figcaption class="text-center">'Figure-1' import statements in app.module.ts.
+            </figcaption>
+        </figure>
+        <p>Next we'll add HttpClientModule to the imports declaration of the app.module.</p>
+        <figure class="text-center">
+            <img class=" img-fluid" src="./assets/img/imports-appmodule.PNG" width="50%" />
+            <figcaption class="text-center">'Figure-2' import declarations in app.module.ts.
+            </figcaption>
+        </figure>
+        <p>Now we'll create the service module to contain the methods for our API calls.
+            It's easy tp add files via the @angular cli. In this case, we'll add it to the same folder
+            as the band-album-list.component and album interface 'band-album-list'.
+        </p>
+        <figure class="text-center">
+            <img class=" img-fluid" src="./assets/img/add-service.PNG" width="50%" />
+            <figcaption class="text-center">'Figure-3' @angular cli adding the album.service.ts file in the
+                band-album-list folder.
+            </figcaption>
+        </figure>
+        <figure class="text-center">
+            <img class=" img-fluid" src="./assets/img/band-album-list_folder.PNG" width="50%" />
+            <figcaption class="text-center">'Figure-4' Files created to a specific folder via the @angular cli.
+            </figcaption>
+        </figure>
+        <p>As you can see, the files album.service.ts and album.service.spec.ts (testing file) have been added.</p>
+        <p>One more thing to do is to add an import statement ot the component class that will be accessing the API.
+            In our case, I will be adding an API call to get a list of albums by Van Halen. The API will be populating
+            an array of type 'Album' which in turn will show up in a table in the band-album-list.component.html file.
+        </p>
+    </div>
+    <div class="col-md-6 borderR textCenter">
+        <h4 class="textCenter">Using Observable in API Call</h4>
+
+        <figure class="text-center">
+            <img class=" img-fluid" src="./assets/img/kng" width="75%" />
+            <figcaption class="text-center">
+            </figcaption>
+        </figure>
+        <p></p>
+        <figure class="text-center">
+            <img class=" img-fluid" src="./assets/img/worif" width="75%" />
+            <figcaption class="text-center">
+
+            </figcaption>
+        </figure>
+    </div>
+    <div class="col-md-6 borderL ">
+        <h4 class="textCenter"></h4>
+        <p> </p>
+        <div class="row">
+            <div class=col-md-6>
+                <figure class="text-center">
+                    <img class=" img-fluid" src="./assets/img/finallg" />
+                    <figcaption class="text-center">
+                    </figcaption>
+                </figure>
+            </div>
+            <div class=col-md-6>
+                <figure class="text-center">
+                    <img class=" img-fluid" src="./assets/img/intercoag" />
+                    <figcaption class="text-center">
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <figure class="text-center">
+            <img class=" img-fluid" src="./assets/img/Youb.jpg" width="75%" style="padding: 7%" />
+            <figcaption class="text-center">
+            </figcaption>
+        </figure>
+    </div>
+</div>

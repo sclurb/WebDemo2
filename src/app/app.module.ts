@@ -6,7 +6,7 @@ import { BandAlbumListComponent } from './band-album-list/band-album-list.compon
 import { AlbumSongListComponent } from './album-song-list/album-song-list.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { AngularRoutingComponent } from './angular-routing/angular-routing.component';
 import { UsingApiAngComponent } from './using-api-ang/using-api-ang.component';
