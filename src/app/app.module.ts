@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { AngularRoutingComponent } from './angular-routing/angular-routing.component';
+import { UsingApiAngComponent } from './using-api-ang/using-api-ang.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +17,15 @@ import { AngularRoutingComponent } from './angular-routing/angular-routing.compo
     BandAlbumListComponent,
     AlbumSongListComponent,
     HomeComponent,
-    AngularRoutingComponent
+    AngularRoutingComponent,
+    UsingApiAngComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       { path: 'band-album-list', component: BandAlbumListComponent },
       { path: 'angular-routing', component: AngularRoutingComponent },
+      { path: 'using-api-ang', component: UsingApiAngComponent },
       { path: 'home', component: HomeComponent }
     ]),
     NgbModule,

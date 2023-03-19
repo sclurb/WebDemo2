@@ -28,7 +28,9 @@ export class AlbumSongListComponent implements OnInit, OnDestroy, OnChanges {
   }
 
   ngOnDestroy(): void {
-    this.sub.unsubscribe();
+    if(this.sub){
+      this.sub.unsubscribe();
+    }
   }
 
   ngOnChanges() {
@@ -43,7 +45,4 @@ export class AlbumSongListComponent implements OnInit, OnDestroy, OnChanges {
       error: err => this.errorMessage = err
     });
   }
-
-  
-
 }

@@ -30,7 +30,9 @@ export class BandAlbumListComponent implements OnInit, OnDestroy {
   constructor(private albumService: AlbumService) { }
   
   ngOnDestroy(): void {
-    this.sub.unsubscribe();
+    if(this.sub){
+      this.sub.unsubscribe();
+    }
   }
 
   async ngOnInit(){
