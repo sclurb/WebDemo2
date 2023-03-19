@@ -7,9 +7,16 @@ body, html {
     color: #aaaaaa;
     }
 
-.border {
-    border-style: solid;
-    border-color: aqua;
+.borderR {
+    border-right: solid;
+    /* border-style: solid; */
+    border-color: rgb(140, 156, 156);
+    padding: 2%;
+}
+.borderL {
+    border-left: solid;
+    /* border-style: solid; */
+    border-color: rgb(140, 156, 156);
 }
 
 .textCenter {
