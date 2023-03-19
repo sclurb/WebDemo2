@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { catchError, Observable, tap, throwError } from "rxjs";
+import { catchError, lastValueFrom, Observable, tap, throwError } from "rxjs";
 import { Album, Song } from './album';
-import { HttpClient, HttpErrorResponse } from "@angular/common/http";
+import { HttpClient, HttpErrorResponse, HttpHeaders } from "@angular/common/http";
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +9,9 @@ import { HttpClient, HttpErrorResponse } from "@angular/common/http";
 export class AlbumService {
 
   private albumUrl = 'assets/jsonFiles/albums.json';
+  private albumUrl1 = 'https://localhost:7053/api/AlbumSong/getAlbums';
   private songUrl = 'assets/jsonFiles/albumSongs.json';
+  private songUrl1 = 'https://localhost:7053/api/AlbumSong/getSongs';
 
   constructor(private http: HttpClient) { }
 
@@ -18,6 +20,30 @@ export class AlbumService {
       //tap(data => console.log('All: ', JSON.stringify(data))),
       catchError(this.handleError)
     );
+  }
+
+  async getAlbumsAsync<TResponse>(): Promise<TResponse> {
+    try {
+      let getResponse = this.http.get<TResponse>(this.albumUrl1);
+      let result = await lastValueFrom(getResponse);
+      return result as TResponse;
+    }
+    catch (ex: any) {
+      console.error(ex);
+    }
+    return {} as TResponse;
+  }
+
+  async getSongsAsync<TResponse>(): Promise<TResponse> {
+    try {
+      let getResponse = this.http.get<TResponse>(this.songUrl1);
+      let result = await lastValueFrom(getResponse);
+      return result as TResponse;
+    }
+    catch (ex: any) {
+      console.error(ex);
+    }
+    return {} as TResponse;
   }
 
   getSongs(): Observable<Song[]> {

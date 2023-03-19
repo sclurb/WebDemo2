@@ -33,14 +33,11 @@ export class BandAlbumListComponent implements OnInit, OnDestroy {
     this.sub.unsubscribe();
   }
 
-  ngOnInit(): void {
-    this.sub = this.albumService.getAlbums().subscribe({
-      next: albums => {
-        this.albums = albums;
-        this.filteredAlbums = this.albums;
-      },
-      error: err => this.errorMessage = err
-    });
+  async ngOnInit(){
+
+    //this.getAlbums();
+    this.albums = await this.albumService.getAlbumsAsync<Album[]>();
+    this.filteredAlbums = this.albums;
   }
 
   performFilter(filterBy: string): Album[] {
@@ -52,5 +49,15 @@ export class BandAlbumListComponent implements OnInit, OnDestroy {
   albumSelected(album: Album): void {
     this.album = album;
     this.isVisible = true;
+  }
+
+  getAlbums() {
+    this.sub = this.albumService.getAlbums().subscribe({
+      next: albums => {
+        this.albums = albums;
+        this.filteredAlbums = this.albums;
+      },
+      error: err => this.errorMessage = err
+    });
   }
 }

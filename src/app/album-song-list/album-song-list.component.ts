@@ -22,13 +22,9 @@ export class AlbumSongListComponent implements OnInit, OnDestroy, OnChanges {
 
   }
 
-  ngOnInit(): void {
-    this.sub = this.albumService.getSongs().subscribe({
-      next: songs => {
-        this.songs = songs;
-      },
-      error: err => this.errorMessage = err
-    });
+  async ngOnInit(): Promise<void> {
+    //this.getSongs();
+    this.songs = await this.albumService.getSongsAsync<Song[]>();
   }
 
   ngOnDestroy(): void {
@@ -38,5 +34,16 @@ export class AlbumSongListComponent implements OnInit, OnDestroy, OnChanges {
   ngOnChanges() {
     this.selectedSongs = this.songs.filter(x => x.albumId === this.album?.albumId);
   }
+
+  getSongs() {
+    this.sub = this.albumService.getSongs().subscribe({
+      next: songs => {
+        this.songs = songs;
+      },
+      error: err => this.errorMessage = err
+    });
+  }
+
+  
 
 }
