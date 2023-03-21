@@ -26,7 +26,7 @@ export class AlbumSongListComponent implements OnInit, OnDestroy, OnChanges {
   }
 
   async ngOnInit(): Promise<void> {
-    // this.getSongs(this.songUrl);
+    // this.getSongs(this.songUrlEf);
     this.songs = await this.albumService.getAsync<Song[]>(this.songUrlEf);
   }
 
@@ -45,7 +45,11 @@ export class AlbumSongListComponent implements OnInit, OnDestroy, OnChanges {
       next: songs => {
         this.songs = songs;
       },
-      error: err => this.errorMessage = err
+      error: err => {
+        this.errorMessage = err;
+        console.error("Error on getSongs!", this.errorMessage); 
+      }
     });
   }
+
 }

@@ -1,80 +1,154 @@
 <h3 class="textCenter">Using Web API's in Angular</h3>
 
 <div class="row">
-    <div class="col-md-12 textCenter container">
+    <div class="col-md-2">
+        <figure class="textCenter">
+            <img class=" img-fluid" src="./assets/img/angular-logo.png" />
+            <figcaption class="text-center">
+            </figcaption>
+        </figure>
+    </div>
+    <div class="col-md-8 textCenter">
         <h4>Adding HttpClientModule</h4>
-        <p>First in the App.Module.ts file, we'll need to add the import statement for HttpModule</p>
+        <p>
+            First in the App.Module.ts file, we'll need to add the import statement for HttpModule.
+        </p>
         <figure class="text-center">
-            <img class=" img-fluid" src="./assets/img/AppModule_Imports.PNG" width="50%" />
+            <img class=" img-fluid" src="./assets/img/AppModule_Imports.PNG" />
             <figcaption class="text-center">'Figure-1' import statements in app.module.ts.
             </figcaption>
         </figure>
-        <p>Next we'll add HttpClientModule to the imports declaration of the app.module.</p>
+        <p>
+            Next we'll add HttpClientModule to the imports declaration of the app.module.
+        </p>
         <figure class="text-center">
-            <img class=" img-fluid" src="./assets/img/imports-appmodule.PNG" width="50%" />
+            <img class=" img-fluid" src="./assets/img/imports-appmodule.PNG" />
             <figcaption class="text-center">'Figure-2' import declarations in app.module.ts.
             </figcaption>
         </figure>
-        <p>Now we'll create the service module to contain the methods for our API calls.
+        <p>
+            Now we'll create the service module to contain the methods for our API calls.
             It's easy tp add files via the @angular cli. In this case, we'll add it to the same folder
             as the band-album-list.component and album interface 'band-album-list'.
         </p>
         <figure class="text-center">
-            <img class=" img-fluid" src="./assets/img/add-service.PNG" width="50%" />
+            <img class=" img-fluid" src="./assets/img/add-service.PNG" />
             <figcaption class="text-center">'Figure-3' @angular cli adding the album.service.ts file in the
                 band-album-list folder.
             </figcaption>
         </figure>
         <figure class="text-center">
-            <img class=" img-fluid" src="./assets/img/band-album-list_folder.PNG" width="50%" />
+            <img class=" img-fluid" src="./assets/img/band-album-list_folder.PNG" />
             <figcaption class="text-center">'Figure-4' Files created to a specific folder via the @angular cli.
             </figcaption>
         </figure>
-        <p>As you can see, the files album.service.ts and album.service.spec.ts (testing file) have been added.</p>
-        <p>One more thing to do is to add an import statement ot the component class that will be accessing the API.
+        <p>
+            As you can see, the files album.service.ts and album.service.spec.ts (testing file) have been added.
+            Now below is an image of the import statements for the album.service.ts file. I have added
+            HttpClientModule and HttpErrorResponse.
+        </p>
+        <figure class="text-center">
+            <img class=" img-fluid" src="./assets/img/imports-AlbumService.PNG" />
+            <figcaption class="text-center">
+                'Figure-5' Import statements in the album.service.ts file..
+            </figcaption>
+        </figure>
+        <p>
+            One more thing to do is to add an import statement ot the component class that will be accessing the API.
             In our case, I will be adding an API call to get a list of albums by Van Halen. The API will be populating
             an array of type 'Album' which in turn will show up in a table in the band-album-list.component.html file.
         </p>
+        <h5>To Use Observables or Async Calls?</h5>
+        <p style="border-bottom: solid; margin-bottom:50px; padding-bottom: 25px;">
+            Now we'll show you two different ways you can write methods to access API's from a service hosted out in the
+            cloud. There is an app I am running locally that will represent a cloud hosted Web API service. I have
+            written two sperate types of methods that will access this service. This is the same service both
+            methodologies will
+            access. One methdology has an advandtage over the other.
+        </p>
+
     </div>
+
+    <div class="col-md-2">
+        <figure class="text-center" style="width: 50%">
+            <img class=" img-fluid" src="./assets/img/NET_Core_Logo.svg.png" />
+            <figcaption class="text-center">
+            </figcaption>
+        </figure>
+    </div>
+
+
     <div class="col-md-6 borderR textCenter">
-        <h4 class="textCenter">Using Observable in API Call</h4>
+        <h4 class="textCenter">Using Observable Methods in an API Call</h4>
 
         <figure class="text-center">
-            <img class=" img-fluid" src="./assets/img/kng" width="75%" />
+            <img class=" img-fluid" src="./assets/img/observableMethods_albumService.PNG" />
             <figcaption class="text-center">
+                'Figure-6' Two observable call written in the Album.Service.ts file.
             </figcaption>
         </figure>
-        <p></p>
+        <p>
+            With Regards to these methods, I should mention that the get methods on lines 28 and 35 are from the
+            HttpClientModule installed in the album.service.ts file. This http.get() method is an async method and the
+            '.pipe()' extension was added to expose the catchError method. Now in the signature of these two methods,
+            there is the return type of 'Observable' which calls for specifying the type of return object. So we have
+            two separate methods which will return either type 'Album' or type 'Song'.</p>
+        <p>
+            Now we'll take a look at the component classes and the methods that access this album.service.ts class.
+            Below are two separate images from the band-album-list.componnet.ts file and the
+            album-song-list.component.ts file.
+        </p>
         <figure class="text-center">
-            <img class=" img-fluid" src="./assets/img/worif" width="75%" />
+            <img class=" img-fluid" src="./assets/img/getAlbums-component.PNG" />
             <figcaption class="text-center">
-
+                'Figure-7' getAlbums() method in the band-album-list.component.ts file;
+            </figcaption>
+        </figure>
+        <figure class="text-center">
+            <img class=" img-fluid" src="./assets/img/getSongs-component.PNG" />
+            <figcaption class="textCenter">
+                'Figure-8' getSongs() in the album-song-list.component.ts file.
             </figcaption>
         </figure>
     </div>
-    <div class="col-md-6 borderL ">
-        <h4 class="textCenter"></h4>
-        <p> </p>
-        <div class="row">
-            <div class=col-md-6>
-                <figure class="text-center">
-                    <img class=" img-fluid" src="./assets/img/finallg" />
-                    <figcaption class="text-center">
-                    </figcaption>
-                </figure>
-            </div>
-            <div class=col-md-6>
-                <figure class="text-center">
-                    <img class=" img-fluid" src="./assets/img/intercoag" />
-                    <figcaption class="text-center">
-                    </figcaption>
-                </figure>
-            </div>
-        </div>
-        <figure class="text-center">
-            <img class=" img-fluid" src="./assets/img/Youb.jpg" width="75%" style="padding: 7%" />
-            <figcaption class="text-center">
+
+    <div class="col-md-6 borderL textCenter">
+        <h4 class="textCenter">Using Async Methods in an API Call</h4>
+        <p>
+            Now we'll take a look at another way to use HttpClientModule. Below in Figure-9, we are showing the
+            single method in the album.service.ts file that also uses HttpClient getAsync().
+        </p>
+        <figure class="textCenter">
+            <img class=" img-fluid" src="./assets/img/getAsync.PNG" />
+            <figcaption class="textCenter">
+                'Figure-9' getAsync() in the album.service.ts file.
             </figcaption>
         </figure>
+        <p>
+            This getAsync method takes a generic parameter which in turn is passed to the http instance of
+            HttpClientMudule's
+            get method. So now when we call this method, we can specify the 'type' of response we are getting from the
+            calling method.
+        </p>
+        <p>
+            Below is the call to this method from the band-album-listcomponent.ts file. You'll notice that there are no
+            supporting methods or observables in this call. It is made directly from the ngOnInit() method.
+        </p>
+        <figure class="textCenter">
+            <img class=" img-fluid" src="./assets/img/ngOnInit-band-album-list.component.PNG" />
+            <figcaption>
+                'Figure-10' ngOnInit() from the band-album-list.component.ts file.
+            </figcaption>
+        </figure>
+        <p>
+            In this call to the album.service.ts class, we use the await operator a generic parameter of type Album[]
+            before the parentheses as well as pass the url to the Web API service. Using this methodology reduces the
+            complexity and number of lines of code.
+        </p>
+        <p>
+            In conclusion, that is a basic explanation of how API's can be accessed from an angular app. Software-Logistics 
+            uses the Async methodology in GSP.WebClient with some additional code for appending headers and authorization. 
+            There is also some error handling as well.   But it simplifies code.
+        </p>
     </div>
 </div>

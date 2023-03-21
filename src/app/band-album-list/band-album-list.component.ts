@@ -43,7 +43,7 @@ export class BandAlbumListComponent implements OnInit, OnDestroy {
 
   async ngOnInit(){
 
-    // this.getAlbums(this.albumUrl);
+    // this.getAlbums(this.albumUrlEf);
     this.albums = await this.albumService.getAsync<Album[]>(this.albumUrlEf);
     this.filteredAlbums = this.albums;
   }
@@ -65,7 +65,11 @@ export class BandAlbumListComponent implements OnInit, OnDestroy {
         this.albums = albums;
         this.filteredAlbums = this.albums;
       },
-      error: err => this.errorMessage = err
+      error: err => {
+        this.errorMessage = err;
+        console.error("Error on getAlbums!", this.errorMessage); 
+      }
     });
   }
+
 }

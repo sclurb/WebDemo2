@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { catchError, lastValueFrom, Observable, tap, throwError } from "rxjs";
 import { Album, Song } from './album';
-import { HttpClient, HttpErrorResponse, HttpHeaders } from "@angular/common/http";
+import { HttpClient, HttpErrorResponse } from "@angular/common/http";
 
 @Injectable({
   providedIn: 'root'
@@ -26,14 +26,12 @@ export class AlbumService {
 
   getAlbums(url: string): Observable<Album[]> {
     return this.http.get<Album[]>(url).pipe(
-      //tap(data => console.log('All: ', JSON.stringify(data))),
       catchError(this.handleError)
     );
   }
 
   getSongs(url: string): Observable<Song[]> {
     return this.http.get<Song[]>(url).pipe(
-      //tap(data => console.log('Songs: ', JSON.stringify(data))),
       catchError(this.handleError)
     );
   }
