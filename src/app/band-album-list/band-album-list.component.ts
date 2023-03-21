@@ -11,6 +11,12 @@ import { Subscription } from 'rxjs';
 })
 export class BandAlbumListComponent implements OnInit, OnDestroy {
 
+  private albumUrl = 'assets/jsonFiles/albums.json';
+  private albumUrlSql = 'https://localhost:7053/api/AlbumSong/getAlbums';
+  private albumUrlEf = 'https://localhost:7270/api/AlbumSong/Albums';
+
+
+
   private _listFilter: string = '';
   get listFilter(): string {
     return this._listFilter;
@@ -37,8 +43,8 @@ export class BandAlbumListComponent implements OnInit, OnDestroy {
 
   async ngOnInit(){
 
-    //this.getAlbums();
-    this.albums = await this.albumService.getAlbumsAsync<Album[]>();
+    // this.getAlbums(this.albumUrl);
+    this.albums = await this.albumService.getAsync<Album[]>(this.albumUrlEf);
     this.filteredAlbums = this.albums;
   }
 
@@ -53,8 +59,8 @@ export class BandAlbumListComponent implements OnInit, OnDestroy {
     this.isVisible = true;
   }
 
-  getAlbums() {
-    this.sub = this.albumService.getAlbums().subscribe({
+  getAlbums(url: string) {
+    this.sub = this.albumService.getAlbums(url).subscribe({
       next: albums => {
         this.albums = albums;
         this.filteredAlbums = this.albums;
