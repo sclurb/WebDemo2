@@ -10,8 +10,10 @@ export class AlbumService {
 
   private albumUrl = 'assets/jsonFiles/albums.json';
   private albumUrl1 = 'https://localhost:7053/api/AlbumSong/getAlbums';
+  private albumUrl2 = 'https://localhost:7270/api/AlbumSong/Albums';
   private songUrl = 'assets/jsonFiles/albumSongs.json';
   private songUrl1 = 'https://localhost:7053/api/AlbumSong/getSongs';
+  private songUrl2 = 'https://localhost:7270/api/AlbumSong/Songs';
 
   constructor(private http: HttpClient) { }
 
@@ -24,7 +26,7 @@ export class AlbumService {
 
   async getAlbumsAsync<TResponse>(): Promise<TResponse> {
     try {
-      let getResponse = this.http.get<TResponse>(this.albumUrl1);
+      let getResponse = this.http.get<TResponse>(this.albumUrl2);
       let result = await lastValueFrom(getResponse);
       return result as TResponse;
     }
@@ -36,7 +38,7 @@ export class AlbumService {
 
   async getSongsAsync<TResponse>(): Promise<TResponse> {
     try {
-      let getResponse = this.http.get<TResponse>(this.songUrl1);
+      let getResponse = this.http.get<TResponse>(this.songUrl2);
       let result = await lastValueFrom(getResponse);
       return result as TResponse;
     }
