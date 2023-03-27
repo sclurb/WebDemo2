@@ -1,0 +1,16 @@
+ .bg {
+    background-image: url(/./assets/img/Kitty-404.png);
+
+    width: 100vw;
+    height: 100vh;
+    background-size: 95.4% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-right: 100px; }
+
+ .nav {
+     overflow: auto;
+ }
+ .body {
+    padding: 20px;
+ }

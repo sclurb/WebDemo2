@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { AngularRoutingComponent } from './angular-routing/angular-routing.component';
 import { UsingApiAngComponent } from './using-api-ang/using-api-ang.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { UsingApiAngComponent } from './using-api-ang/using-api-ang.component';
     AlbumSongListComponent,
     HomeComponent,
     AngularRoutingComponent,
-    UsingApiAngComponent
+    UsingApiAngComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,9 @@ import { UsingApiAngComponent } from './using-api-ang/using-api-ang.component';
       { path: 'band-album-list', component: BandAlbumListComponent },
       { path: 'angular-routing', component: AngularRoutingComponent },
       { path: 'using-api-ang', component: UsingApiAngComponent },
-      { path: 'home', component: HomeComponent }
+      { path: 'home', component: HomeComponent },
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
+      { path: '**', component: PageNotFoundComponent }
     ]),
     NgbModule,
     FormsModule,
