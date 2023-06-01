@@ -27,7 +27,7 @@ export class AlbumSongListComponent implements OnInit, OnDestroy, OnChanges {
 
   async ngOnInit(): Promise<void> {
     // this.getSongs(this.songUrlEf);
-    this.songs = await this.albumService.getAsync<Song[]>(this.songUrlEf);
+    this.songs = await this.albumService.getAsync<Song[]>(this.songUrl);
   }
 
   ngOnDestroy(): void {

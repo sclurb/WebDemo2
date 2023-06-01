@@ -44,7 +44,7 @@ export class BandAlbumListComponent implements OnInit, OnDestroy {
   async ngOnInit(){
 
     // this.getAlbums(this.albumUrlEf);
-    this.albums = await this.albumService.getAsync<Album[]>(this.albumUrlEf);
+    this.albums = await this.albumService.getAsync<Album[]>(this.albumUrl);
     this.filteredAlbums = this.albums;
   }
 
